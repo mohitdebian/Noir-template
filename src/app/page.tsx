@@ -86,13 +86,13 @@ function BottomAction() {
 
 export default function Home() {
   return (
-    <main className="h-[100dvh] md:h-screen w-full overflow-y-auto overflow-x-hidden md:snap-y md:snap-mandatory md:scroll-smooth relative bg-black">
+    <main className="h-[100dvh] md:h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth relative bg-black" style={{ WebkitOverflowScrolling: 'touch' }}>
       
       <Header />
       <MobileFloatingCTA />
 
       {/* SECTION 1: STRAWBERRY SHAKE */}
-      <section id="shakes" className="min-h-[100dvh] md:h-screen w-full snap-start relative flex items-center">
+      <section id="shakes" className="min-h-[100dvh] md:h-screen w-full snap-start snap-always relative flex items-center">
         {/* Responsive Background Images */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           {/* Mobile Image */}
@@ -185,7 +185,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 2: BURGER */}
-      <section id="baked" className="min-h-[100dvh] md:h-screen w-full snap-start relative flex items-center">
+      <section id="baked" className="min-h-[100dvh] md:h-screen w-full snap-start snap-always relative flex items-center">
         {/* Responsive Background Images */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           {/* Mobile Image */}
@@ -257,7 +257,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 3: COFFEE (Added so the 3rd button works!) */}
-      <section id="coffee" className="min-h-[100dvh] md:h-screen w-full snap-start relative flex items-center bg-[#1a1210]">
+      <section id="coffee" className="min-h-[100dvh] md:h-screen w-full snap-start snap-always relative flex items-center bg-[#1a1210]">
         {/* Responsive Background Images */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           {/* We only have one image for this right now, so we'll use it for both */}
@@ -317,7 +317,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 4: FOOTER */}
-      <section className="snap-start relative w-full h-auto bg-[#0a0908]">
+      <section className="snap-start snap-always relative w-full h-auto bg-[#0a0908]">
         <Footer />
       </section>
 
