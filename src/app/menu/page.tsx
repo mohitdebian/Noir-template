@@ -7,11 +7,11 @@ import Footer from '../../components/Footer';
 import { useState } from 'react';
 
 const MENU_ITEMS = [
-  { id: 1, name: 'Strawberry Shake', desc: 'Fresh strawberries, vanilla ice cream & cream', price: 249, category: 'Desserts', image: '/imgs/strawberry.png' },
+  { id: 1, name: 'Strawberry Shake', desc: 'Fresh strawberries, vanilla ice cream & cream', price: 249, category: 'Coffee', image: '/imgs/strawberry.png' },
   { id: 2, name: 'Noir Classic Burger', desc: 'Grilled beef, cheddar, special sauce', price: 299, category: 'Food', image: '/imgs/burger.png' },
   { id: 3, name: 'Avocado Toast', desc: 'Smashed avocado, chili flakes, cherry tomatoes', price: 199, category: 'Food', image: '/imgs/avacado-toast.png' },
   { id: 4, name: 'Shakshuka', desc: 'Eggs poached in spiced tomato sauce', price: 259, category: 'Food', image: '/imgs/Shakshuka.png' },
-  { id: 5, name: 'Almond Croissant', desc: 'Freshly baked flaky pastry with almond cream', price: 149, category: 'Coffee', image: '/imgs/Almond Croissants.png' },
+  { id: 5, name: 'Almond Croissant', desc: 'Freshly baked flaky pastry with almond cream', price: 149, category: 'Desserts', image: '/imgs/Almond Croissants.png' },
 ];
 
 export default function MenuPage() {
