@@ -16,24 +16,16 @@ function Sidebar({
     ? 'left-0 md:left-auto md:right-0 pl-4 md:pl-0 md:pr-4' 
     : 'right-0 pr-4';
 
-  const linePosition = isLeftOnMobile 
-    ? 'left-10 md:left-auto md:right-10' 
-    : 'right-10';
-
   const displayClasses = hideOnMobile 
     ? 'hidden md:flex' 
     : 'flex';
 
   return (
-    <div className={`${displayClasses} absolute top-1/2 -translate-y-1/2 flex-col gap-8 z-50 pointer-events-auto ${positionClasses}`}>
-      <div className={`absolute top-0 bottom-0 w-[1px] bg-white/10 -z-10 ${linePosition}`}></div>
+    <div className={`absolute top-1/2 -translate-y-1/2 flex-col gap-8 z-50 pointer-events-auto ${displayClasses} ${positionClasses}`}>
       
-      <a href="#shakes" className="flex flex-col items-center gap-1 group cursor-pointer decoration-transparent">
-        <div className="w-12 h-12 rounded-xl border border-white/20 overflow-hidden relative group-hover:border-[#c89040] transition bg-[#1a1210]">
-          <Image src="/imgs/strawberry.png" alt="Signature Shakes" fill className="object-cover" />
       {/* SHAKES BUTTON */}
       <Link href="#shakes" className="group flex flex-col items-center gap-2 w-16 md:w-20 active:scale-95 transition-transform duration-200">
-        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden border-2 border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.6)] group-hover:border-[#c89040] transition-colors relative bg-black/50">
+        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden border-[1.5px] border-white/20 shadow-[0_4px_20px_rgba(0,0,0,0.6)] group-hover:border-[#c89040] transition-colors relative bg-black/50">
           <Image src="/imgs/strawberry.png" alt="Shakes" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
           <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
           {/* Small icon indicator */}
@@ -46,7 +38,7 @@ function Sidebar({
 
       {/* BAKED BUTTON */}
       <Link href="#baked" className="group flex flex-col items-center gap-2 w-16 md:w-20 active:scale-95 transition-transform duration-200">
-        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden border-2 border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.6)] group-hover:border-[#c89040] transition-colors relative bg-black/50">
+        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden border-[1.5px] border-white/20 shadow-[0_4px_20px_rgba(0,0,0,0.6)] group-hover:border-[#c89040] transition-colors relative bg-black/50">
           <Image src="/imgs/burger.png" alt="Baked" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
           <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
           <div className="absolute bottom-1 right-1 bg-black/60 rounded-full p-1 backdrop-blur-sm border border-white/20 hidden md:block">
@@ -58,7 +50,7 @@ function Sidebar({
 
       {/* COFFEE BUTTON */}
       <Link href="#coffee" className="group flex flex-col items-center gap-2 w-16 md:w-20 active:scale-95 transition-transform duration-200">
-        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden border-2 border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.6)] group-hover:border-[#c89040] transition-colors relative bg-black/50">
+        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden border-[1.5px] border-white/20 shadow-[0_4px_20px_rgba(0,0,0,0.6)] group-hover:border-[#c89040] transition-colors relative bg-black/50">
           <Image src="/imgs/Almond Croissants.png" alt="Coffee" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
           <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
           <div className="absolute bottom-1 right-1 bg-black/60 rounded-full p-1 backdrop-blur-sm border border-white/20 hidden md:block">
