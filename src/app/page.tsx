@@ -151,11 +151,6 @@ export default function Home() {
                 Explore Our Menu 
                 <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </Link>
-              
-              <button className="text-[0.9rem] text-white/90 flex items-center gap-4 hover:text-white transition w-max mt-1">
-                <span className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center text-[0.6rem] pl-0.5">▶</span>
-                Watch the Vibe
-              </button>
             </div>
           </div>
         </div>
