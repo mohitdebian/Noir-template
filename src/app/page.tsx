@@ -84,12 +84,12 @@ function BottomAction() {
 
 export default function Home() {
   return (
-    <main className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y md:snap-mandatory snap-proximity md:scroll-smooth relative bg-black">
+    <main className="h-[100dvh] md:h-screen w-full overflow-y-auto overflow-x-hidden md:snap-y md:snap-mandatory md:scroll-smooth relative bg-black">
       
       <Header />
 
       {/* SECTION 1: STRAWBERRY SHAKE */}
-      <section id="shakes" className="h-screen w-full snap-start relative flex items-center">
+      <section id="shakes" className="min-h-[100dvh] md:h-screen w-full snap-start relative flex items-center">
         {/* Responsive Background Images */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           {/* Mobile Image */}
@@ -157,9 +157,6 @@ export default function Home() {
           <h2 className="text-[2rem] text-white leading-[1.1] tracking-wide" style={{ fontFamily: 'var(--font-playfair)' }}>
             More than <br/> just a shake.
           </h2>
-          <h2 className="text-[2rem] text-[#c89040] leading-[1.1] tracking-wide mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
-            A moment <br/> to yourself.
-          </h2>
           
           <div className="w-12 h-[1px] bg-[#c89040]/50 mb-4 flex items-center justify-center relative">
             <div className="absolute w-1 h-1 bg-[#c89040] rotate-45"></div>
@@ -185,7 +182,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 2: BURGER */}
-      <section id="baked" className="h-screen w-full snap-start relative flex items-center">
+      <section id="baked" className="min-h-[100dvh] md:h-screen w-full snap-start relative flex items-center">
         {/* Responsive Background Images */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           {/* Mobile Image */}
@@ -257,7 +254,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 3: COFFEE (Added so the 3rd button works!) */}
-      <section id="coffee" className="h-screen w-full snap-start relative flex items-center bg-[#1a1210]">
+      <section id="coffee" className="min-h-[100dvh] md:h-screen w-full snap-start relative flex items-center bg-[#1a1210]">
         {/* Responsive Background Images */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           {/* We only have one image for this right now, so we'll use it for both */}

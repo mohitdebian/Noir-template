@@ -11,7 +11,7 @@ export default function Footer() {
             <h1 className="text-3xl tracking-widest text-white group-hover:text-white/80 transition" style={{ fontFamily: 'var(--font-playfair)' }}>NOIR</h1>
             <span className="text-[0.65rem] tracking-[0.4em] text-[#c89040] ml-1 mt-1">CAFÉ</span>
           </Link>
-          <p className="text-white/50 text-[0.85rem] leading-relaxed mb-8">
+          <p className="hidden md:block text-white/50 text-[0.85rem] leading-relaxed mb-8">
             A cozy space for great coffee, delicious food, and even better conversations. Handcrafted to make your everyday moments better.
           </p>
           <div className="flex gap-4">
