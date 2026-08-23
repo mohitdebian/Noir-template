@@ -31,29 +31,42 @@ function Sidebar({
       <a href="#shakes" className="flex flex-col items-center gap-1 group cursor-pointer decoration-transparent">
         <div className="w-12 h-12 rounded-xl border border-white/20 overflow-hidden relative group-hover:border-[#c89040] transition bg-[#1a1210]">
           <Image src="/imgs/strawberry.png" alt="Signature Shakes" fill className="object-cover" />
+      {/* SHAKES BUTTON */}
+      <Link href="#shakes" className="group flex flex-col items-center gap-2 w-16 md:w-20 active:scale-95 transition-transform duration-200">
+        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden border-2 border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.6)] group-hover:border-[#c89040] transition-colors relative bg-black/50">
+          <Image src="/imgs/strawberry.png" alt="Shakes" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+          {/* Small icon indicator */}
+          <div className="absolute bottom-1 right-1 bg-black/60 rounded-full p-1 backdrop-blur-sm border border-white/20 hidden md:block">
+             <svg className="w-2 h-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+          </div>
         </div>
-        <span className="text-[0.55rem] leading-tight text-center tracking-widest text-white/70 group-hover:text-[#c89040] transition w-14">
-          SIGNATURE<br/>SHAKES
-        </span>
-      </a>
-      
-      <a href="#baked" className="flex flex-col items-center gap-1 group cursor-pointer decoration-transparent">
-        <div className="w-12 h-12 rounded-xl border border-white/20 overflow-hidden relative group-hover:border-[#c89040] transition bg-[#1a1210]">
-          <Image src="/imgs/burger.png" alt="Freshly Baked" fill className="object-cover" />
+        <span className="text-[0.6rem] tracking-[0.2em] font-semibold text-white/80 group-hover:text-white text-center uppercase leading-tight transition-colors drop-shadow-md">Signature<br/>Shakes</span>
+      </Link>
+
+      {/* BAKED BUTTON */}
+      <Link href="#baked" className="group flex flex-col items-center gap-2 w-16 md:w-20 active:scale-95 transition-transform duration-200">
+        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden border-2 border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.6)] group-hover:border-[#c89040] transition-colors relative bg-black/50">
+          <Image src="/imgs/burger.png" alt="Baked" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+          <div className="absolute bottom-1 right-1 bg-black/60 rounded-full p-1 backdrop-blur-sm border border-white/20 hidden md:block">
+             <svg className="w-2 h-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+          </div>
         </div>
-        <span className="text-[0.55rem] leading-tight text-center tracking-widest text-white/70 group-hover:text-[#c89040] transition w-14">
-          FRESHLY<br/>BAKED
-        </span>
-      </a>
-      
-      <a href="#coffee" className="flex flex-col items-center gap-1 group cursor-pointer decoration-transparent">
-        <div className="w-12 h-12 rounded-xl border border-white/20 overflow-hidden relative group-hover:border-[#c89040] transition bg-[#1a1210]">
-          <Image src="/imgs/Almond Croissants.png" alt="Specialty Coffee" fill className="object-cover" />
+        <span className="text-[0.6rem] tracking-[0.2em] font-semibold text-white/80 group-hover:text-white text-center uppercase leading-tight transition-colors drop-shadow-md">Freshly<br/>Baked</span>
+      </Link>
+
+      {/* COFFEE BUTTON */}
+      <Link href="#coffee" className="group flex flex-col items-center gap-2 w-16 md:w-20 active:scale-95 transition-transform duration-200">
+        <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden border-2 border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.6)] group-hover:border-[#c89040] transition-colors relative bg-black/50">
+          <Image src="/imgs/Almond Croissants.png" alt="Coffee" fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+          <div className="absolute bottom-1 right-1 bg-black/60 rounded-full p-1 backdrop-blur-sm border border-white/20 hidden md:block">
+             <svg className="w-2 h-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+          </div>
         </div>
-        <span className="text-[0.55rem] leading-tight text-center tracking-widest text-white/70 group-hover:text-[#c89040] transition w-14">
-          SPECIALTY<br/>COFFEE
-        </span>
-      </a>
+        <span className="text-[0.6rem] tracking-[0.2em] font-semibold text-white/80 group-hover:text-white text-center uppercase leading-tight transition-colors drop-shadow-md">Specialty<br/>Coffee</span>
+      </Link>
     </div>
   );
 }
