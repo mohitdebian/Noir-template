@@ -58,27 +58,29 @@ function Sidebar({
   );
 }
 
-function BottomAction() {
+function MobileFloatingCTA() {
   return (
-    <>
-      {/* Mobile CTA (Hidden on desktop) */}
-      <div className="md:hidden absolute bottom-24 w-full flex justify-center z-50 pointer-events-auto">
-        <Link href="/menu" className="group rounded-full border border-white/30 backdrop-blur-sm px-8 py-3.5 flex items-center justify-between hover:bg-noir-gold hover:border-noir-gold hover:text-black transition-all w-max min-w-[220px] text-white tracking-[0.2em] text-[0.7rem] uppercase font-semibold">
+    <div className="md:hidden fixed bottom-8 left-0 w-full flex justify-center z-[90] pointer-events-none">
+      <div className="pointer-events-auto">
+        <Link href="/menu" className="group rounded-full border border-white/20 bg-black/60 backdrop-blur-xl shadow-2xl px-8 py-4 flex items-center justify-between hover:bg-[#c89040] hover:border-[#c89040] hover:text-black transition-all w-max min-w-[220px] text-white tracking-[0.25em] text-[0.7rem] uppercase font-semibold">
           Explore Our Menu 
-          <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          <svg className="w-4 h-4 ml-3 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
         </Link>
       </div>
-      
-      {/* Desktop Scroll Indicator (Hidden on mobile) */}
-      <div className="hidden md:flex absolute bottom-8 w-full flex-col items-center justify-center z-10 pointer-events-none">
-        <div className="w-[1px] h-12 bg-white/20 mb-4"></div>
-        <div className="w-5 h-8 border border-white/50 rounded-full flex flex-col items-center justify-center mb-3">
-          <span className="text-white text-[11px] font-serif">!</span>
-        </div>
-        <span className="text-[0.55rem] tracking-[0.3em] text-white/70 uppercase">Scroll to explore</span>
-        <span className="text-white/50 mt-1 font-light text-xl">⌄</span>
+    </div>
+  );
+}
+
+function BottomAction() {
+  return (
+    <div className="hidden md:flex absolute bottom-8 w-full flex-col items-center justify-center z-10 pointer-events-none">
+      <div className="w-[1px] h-12 bg-white/20 mb-4"></div>
+      <div className="w-5 h-8 border border-white/50 rounded-full flex flex-col items-center justify-center mb-3">
+        <span className="text-white text-[11px] font-serif">!</span>
       </div>
-    </>
+      <span className="text-[0.55rem] tracking-[0.3em] text-white/70 uppercase">Scroll to explore</span>
+      <span className="text-white/50 mt-1 font-light text-xl">⌄</span>
+    </div>
   );
 }
 
@@ -87,6 +89,7 @@ export default function Home() {
     <main className="h-[100dvh] md:h-screen w-full overflow-y-auto overflow-x-hidden md:snap-y md:snap-mandatory md:scroll-smooth relative bg-black">
       
       <Header />
+      <MobileFloatingCTA />
 
       {/* SECTION 1: STRAWBERRY SHAKE */}
       <section id="shakes" className="min-h-[100dvh] md:h-screen w-full snap-start relative flex items-center">
