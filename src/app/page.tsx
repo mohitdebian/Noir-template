@@ -93,7 +93,7 @@ export default function Home() {
   return (
     <main className="h-[100dvh] md:h-screen w-full overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth relative bg-black" style={{ WebkitOverflowScrolling: 'touch' }}>
       
-      <Header />
+      
       <MobileFloatingCTA />
 
       {/* SECTION 1: STRAWBERRY SHAKE */}
