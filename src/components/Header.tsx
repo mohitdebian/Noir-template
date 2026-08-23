@@ -43,11 +43,11 @@ export default function Header({ isAbsolute = false }: { isAbsolute?: boolean })
           </button>
         </div>
         
-        <nav className="flex flex-col items-center justify-center flex-1 gap-8 mt-12">
-          <Link href="/" onClick={() => setIsOpen(false)} className="text-4xl text-white hover:text-[#c89040] transition hover:scale-105 transform duration-300" style={{ fontFamily: 'var(--font-playfair)' }}>Home</Link>
-          <Link href="/menu" onClick={() => setIsOpen(false)} className="text-4xl text-white hover:text-[#c89040] transition hover:scale-105 transform duration-300" style={{ fontFamily: 'var(--font-playfair)' }}>Our Menu</Link>
-          <button onClick={() => { setIsOpen(false); alert('Opening Maps Directions...'); }} className="text-4xl text-white hover:text-[#c89040] transition hover:scale-105 transform duration-300" style={{ fontFamily: 'var(--font-playfair)' }}>Directions</button>
-          <Link href="#" onClick={() => setIsOpen(false)} className="text-4xl text-white hover:text-[#c89040] transition hover:scale-105 transform duration-300" style={{ fontFamily: 'var(--font-playfair)' }}>Reservations</Link>
+        <nav className="flex flex-col items-center justify-center flex-1 gap-6 mt-12 pb-24">
+          <Link href="/" onClick={() => setIsOpen(false)} className="text-2xl md:text-4xl text-white hover:text-[#c89040] transition hover:scale-105 transform duration-300" style={{ fontFamily: 'var(--font-playfair)' }}>Home</Link>
+          <Link href="/menu" onClick={() => setIsOpen(false)} className="text-2xl md:text-4xl text-white hover:text-[#c89040] transition hover:scale-105 transform duration-300" style={{ fontFamily: 'var(--font-playfair)' }}>Our Menu</Link>
+          <button onClick={() => { setIsOpen(false); alert('Opening Maps Directions...'); }} className="text-2xl md:text-4xl text-white hover:text-[#c89040] transition hover:scale-105 transform duration-300" style={{ fontFamily: 'var(--font-playfair)' }}>Directions</button>
+          <Link href="#" onClick={() => setIsOpen(false)} className="text-2xl md:text-4xl text-white hover:text-[#c89040] transition hover:scale-105 transform duration-300" style={{ fontFamily: 'var(--font-playfair)' }}>Reservations</Link>
         </nav>
         
         <div className="flex flex-col items-center justify-center gap-3 pb-8">
