@@ -156,27 +156,13 @@ export default function Home() {
         </div>
           
         {/* Mobile-only Typography */}
-        <div className="md:hidden absolute top-32 left-6 z-10 pointer-events-auto flex flex-col items-start text-left max-w-[180px]">
+        <div className="md:hidden absolute top-32 w-full left-0 z-10 pointer-events-auto flex flex-col items-center text-center px-4">
           <h2 className="text-[2rem] text-white leading-[1.1] tracking-wide" style={{ fontFamily: 'var(--font-playfair)' }}>
             More than <br/> just a shake.
           </h2>
-          
-          <div className="w-12 h-[1px] bg-[#c89040]/50 mb-4 flex items-center justify-center relative">
-            <div className="absolute w-1 h-1 bg-[#c89040] rotate-45"></div>
-          </div>
-          
-          <p className="text-white/70 text-[0.75rem] leading-relaxed mb-6">
-            Creamy, dreamy and <br/>
-            made with real <br/>
-            strawberries. <br/>
-            Pure comfort in <br/>
-            every sip.
-          </p>
-
-          <div className="w-16 h-16 rounded-full border border-[#c89040]/40 flex flex-col items-center justify-center gap-1 text-[#c89040]">
-            <span className="text-xs">🍓</span>
-            <span className="text-[0.4rem] tracking-[0.2em] text-center uppercase leading-tight">Made with<br/>Real Fruit</span>
-          </div>
+          <h2 className="text-[2rem] text-[#c89040] leading-[1.1] tracking-wide" style={{ fontFamily: 'var(--font-playfair)' }}>
+            A moment <br/> to yourself.
+          </h2>
         </div>
         
         <BottomAction />
