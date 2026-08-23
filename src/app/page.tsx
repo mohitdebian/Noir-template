@@ -98,7 +98,7 @@ export default function Home() {
           {/* Mobile Image */}
           <div className="md:hidden absolute inset-0">
             <Image 
-              src="/imgs/strawberry.png" 
+              src="/imgs/strawbeery-1.png" 
               alt="Strawberry Shake" 
               fill 
               className="object-cover object-center"
