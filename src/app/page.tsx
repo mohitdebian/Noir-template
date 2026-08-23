@@ -156,7 +156,7 @@ export default function Home() {
         </div>
           
         {/* Mobile-only Typography */}
-        <div className="md:hidden absolute bottom-[40%] left-6 z-10 pointer-events-auto flex flex-col items-start text-left max-w-[180px]">
+        <div className="md:hidden absolute top-32 w-full left-0 z-10 pointer-events-auto flex flex-col items-center text-center px-4">
           <h2 className="text-[2rem] text-white leading-[1.1] tracking-wide drop-shadow-lg" style={{ fontFamily: 'var(--font-playfair)' }}>
             More than <br/> just a shake.
           </h2>
@@ -167,7 +167,7 @@ export default function Home() {
         
         <BottomAction />
 
-        <Sidebar hideOnMobile />
+        <Sidebar isLeftOnMobile />
       </section>
 
       {/* SECTION 2: BURGER */}
