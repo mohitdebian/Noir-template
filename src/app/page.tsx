@@ -84,7 +84,7 @@ function BottomAction() {
 
 export default function Home() {
   return (
-    <main className="h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth relative bg-black">
+    <main className="h-screen w-full overflow-y-auto overflow-x-hidden snap-y md:snap-mandatory snap-proximity md:scroll-smooth relative bg-black">
       
       <Header />
 
