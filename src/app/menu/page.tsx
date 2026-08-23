@@ -51,7 +51,7 @@ export default function MenuPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90"></div>
       </div>
 
-      <Header isAbsolute />
+      
 
       {/* Main Content */}
       <div className="relative z-10 pt-32 pb-24 px-6 max-w-5xl mx-auto flex flex-col items-center">
