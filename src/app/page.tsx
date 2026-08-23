@@ -160,9 +160,6 @@ export default function Home() {
           <h2 className="text-[2rem] text-white leading-[1.1] tracking-wide drop-shadow-lg" style={{ fontFamily: 'var(--font-playfair)' }}>
             More than <br/> just a shake.
           </h2>
-          <h2 className="text-[2rem] text-[#c89040] leading-[1.1] tracking-wide drop-shadow-lg" style={{ fontFamily: 'var(--font-playfair)' }}>
-            A moment <br/> to yourself.
-          </h2>
         </div>
         
         <BottomAction />
